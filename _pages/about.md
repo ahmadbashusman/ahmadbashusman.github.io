@@ -20,4 +20,4 @@ social: true # includes social icons at the bottom of the page
 
 Hi, I'm a PhD student in Computer Science with focus on Cybersecurity
 
-This is my personal website and it still in under developent.
+This is my personal website and it still in under deployment.
