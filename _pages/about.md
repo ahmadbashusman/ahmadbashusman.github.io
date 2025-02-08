@@ -7,7 +7,7 @@ subtitle: <a href='#'>Linköping University</a>. Sweden.
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info: >
     <p>Campus Valla, B-huset, Entrance 29B, Room 3B:446</p>
     <p>Linköping University</p>
