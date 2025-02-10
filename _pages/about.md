@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Linköping University</a>. Sweden.
+subtitle: <a href='https://liu.se/en/employee/ahmus18'>Linköping University</a>. Sweden.
 
 profile:
   align: right
