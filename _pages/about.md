@@ -18,6 +18,4 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hi, I'm a PhD student in Computer Science with focus on Cybersecurity
-
-This is my personal website and it still in under deployment.
+Hi, I'm a Computer Science student with focus on Cybersecurity.
