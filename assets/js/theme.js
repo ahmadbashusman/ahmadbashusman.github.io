@@ -3,12 +3,10 @@
 // Toggle through light, dark, and system theme settings.
 let toggleThemeSetting = () => {
   let themeSetting = determineThemeSetting();
-  if (themeSetting == "system") {
+  if (themeSetting == "dark") {
     setThemeSetting("light");
-  } else if (themeSetting == "light") {
-    setThemeSetting("dark");
   } else {
-    setThemeSetting("system");
+    setThemeSetting("dark");
   }
 };
 
@@ -122,7 +120,7 @@ let addMermaidZoom = (records, observer) => {
 };
 
 let setMermaidTheme = (theme) => {
-  if (theme == "light") {
+  if (theme == "dark") {
     // light theme name in mermaid is 'default'
     // https://mermaid.js.org/config/theming.html#available-themes
     theme = "default";
@@ -209,8 +207,8 @@ let transTheme = () => {
 // "system". Default is "system".
 let determineThemeSetting = () => {
   let themeSetting = localStorage.getItem("theme");
-  if (themeSetting != "dark" && themeSetting != "light" && themeSetting != "system") {
-    themeSetting = "system";
+  if (themeSetting != "dark" && themeSetting != "light" ) {
+    themeSetting = "dark";
   }
   return themeSetting;
 };
@@ -219,12 +217,12 @@ let determineThemeSetting = () => {
 // "system", the computed theme is determined based on the user's system preference.
 let determineComputedTheme = () => {
   let themeSetting = determineThemeSetting();
-  if (themeSetting == "system") {
+  if (themeSetting == "dark") {
     const userPref = window.matchMedia;
     if (userPref && userPref("(prefers-color-scheme: dark)").matches) {
-      return "dark";
-    } else {
       return "light";
+    } else {
+      return "dark";
     }
   } else {
     return themeSetting;
